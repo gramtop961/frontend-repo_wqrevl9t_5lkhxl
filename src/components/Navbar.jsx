@@ -1,4 +1,5 @@
 import { Menu } from "lucide-react";
+import UserMenu from "./UserMenu";
 
 export default function Navbar() {
   return (
@@ -14,7 +15,8 @@ export default function Navbar() {
           <a href="#services" className="hover:text-white transition">Services</a>
           <a href="#testimonials" className="hover:text-white transition">Praise</a>
           <a href="#faq" className="hover:text-white transition">FAQ</a>
-          <a href="#cta" className="ml-2 px-4 py-2 rounded-lg bg-gradient-to-r from-blue-500 to-indigo-500 text-white font-medium shadow hover:shadow-lg transition">Get Your Chart</a>
+          <a href="#cta" className="px-4 py-2 rounded-lg bg-gradient-to-r from-blue-500 to-indigo-500 text-white font-medium shadow hover:shadow-lg transition">Get Your Chart</a>
+          <div className="pl-4 ml-2 border-l border-white/10"><UserMenu /></div>
         </div>
         <button className="md:hidden text-slate-200" aria-label="Open menu">
           <Menu size={22} />
